@@ -1,1 +1,76 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Playlist Neon Keren</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(270deg, #0ff, #90f, #0ff);
+      background-size: 600% 600%;
+      animation: gradientMove 20s ease infinite;
+      color: white;
+    }
+
+    @keyframes gradientMove {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    .playlist {
+      max-width: 800px;
+      margin: 50px auto;
+      background: rgba(0,0,0,0.6);
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 0 40px #0ff;
+    }
+
+    h1 {
+      text-align: center;
+      text-shadow: 0 0 20px #0ff;
+    }
+
+    .track {
+      margin: 15px 0;
+      padding: 15px;
+      border-radius: 15px;
+      background: rgba(255,255,255,0.1);
+      box-shadow: 0 0 15px #90f inset;
+      transition: transform 0.3s;
+    }
+    .track:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px #0ff inset;
+    }
+    audio {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="playlist">
+    <h1>🎶 Playlist Catbox Neon 🎶</h1>
+
+    <div class="track">
+      <p>Lagu 1</p>
+      <audio controls>
+        <source src="https://files.catbox.moe/abcd1.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div class="track">
+      <p>Lagu 2</p>
+      <audio controls>
+        <source src="https://files.catbox.moe/abcd2.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <!-- Duplikasikan banyak kali sampai ribuan track -->
+  </div>
+</body>
+</html>
+
